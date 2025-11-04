@@ -155,25 +155,7 @@
   </footer>
 
   <script>
-   <script>
-  // 11 Kasım 2024'ten itibaren geçen süreyi hesaplar
-  const startDate = new Date("2024-11-11T00:00:00");
-  const counter = document.getElementById("counter");
-
-  function updateCounter() {
-    const now = new Date();
-    const diff = now - startDate;
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-
-    counter.textContent = `💞 ${days} gün ${hours} saat ${minutes} dakika ${seconds} saniyedir birlikte!`;
-  }
-
-  updateCounter();
-  setInterval(updateCounter, 1000);
+  
 </script>
 `;
   <h1>Diloş & Halilişko’nun Hikayesi 💞</h1>
@@ -193,6 +175,7 @@
 
 </body>
 </html>
+
 
 
 
