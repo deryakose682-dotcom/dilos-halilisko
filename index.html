@@ -118,7 +118,7 @@
     </div>
     <div class="photo-card">
       <img src="images/photo8.jpg" alt="Foto 8">
-      <div class="caption">Bazen seni düşünürken kendi kendime gülümsüyorum…</div>
+      <div class="caption">💗</div>
     </div>
     <div class="photo-card">
       <img src="images/photo9.jpg" alt="Foto 9">
@@ -126,11 +126,11 @@
     </div>
     <div class="photo-card">
       <img src="images/photo10.jpg" alt="Foto 10">
-      <div class="caption"> Koca bir ömür seveceğim seni</div>
+      <div class="caption"> Seni seviyorum </div>
     </div>
     <div class="photo-card">
       <img src="images/photo11.jpg" alt="Foto 11">
-      <div class="caption">Hep böyle gülelim</div>
+      <div class="caption">Koca bir ömür seveceğim seni</div>
     </div>
     <div class="photo-card">
       <img src="images/photo12.jpg" alt="Foto 12">
@@ -155,7 +155,8 @@
   </footer>
 
   <script>
-    <script>
+   <script>
+  // 11 Kasım 2024'ten itibaren geçen süreyi hesaplar
   const startDate = new Date("2024-11-11T00:00:00");
   const counter = document.getElementById("counter");
 
@@ -168,7 +169,16 @@
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    counter.textContent = `Birlikte geçen ${days} gün ${hours} saat ${minutes} dakika ${seconds} saniyedir 💞`;
+    counter.textContent = `💞 ${days} gün ${hours} saat ${minutes} dakika ${seconds} saniyedir birlikte!`;
+  }
+
+  updateCounter();
+  setInterval(updateCounter, 1000);
+</script>
+`;
+  <h1>Diloş & Halilişko’nun Hikayesi 💞</h1>
+<div id="counter" class="counter"></div>
+
   }
 
   updateCounter();
@@ -183,5 +193,6 @@
 
 </body>
 </html>
+
 
 
