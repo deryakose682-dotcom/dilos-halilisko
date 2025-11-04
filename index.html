@@ -90,7 +90,7 @@
   <section class="gallery">
     <div class="photo-card">
       <img src="images/photo1.jpg" alt="Foto 1">
-      <div class="caption"> Hep böyle gülelim🤭</div>
+      <div class="caption"> İyi ki gördüm iyi ki sevdim seni </div>
     </div>
     <div class="photo-card">
       <img src="images/photo2.jpg" alt="Foto 2">
@@ -98,7 +98,7 @@
     </div>
     <div class="photo-card">
       <img src="images/photo3.jpg" alt="Foto 3">
-      <div class="caption"> YİNE YENİDEN DÜĞÜN 💞</div>
+      <div class="caption">Bir manzara olduğundan habersiz duruşun 💞</div>
     </div>
     <div class="photo-card">
       <img src="images/photo4.jpg" alt="Foto 4">
@@ -106,7 +106,7 @@
     </div>
     <div class="photo-card">
       <img src="images/photo5.jpg" alt="Foto 5">
-      <div class="caption"> EVLİLİK TEKLİFİ ALDIM HEEE 😄</div>
+      <div class="caption">Seni sülalenin en yakışıklı damadı yapıcam aslan parçası😄</div>
     </div>
     <div class="photo-card">
       <img src="images/photo6.jpg" alt="Foto 6">
@@ -114,7 +114,7 @@
     </div>
     <div class="photo-card">
       <img src="images/photo7.jpg" alt="Foto 7">
-      <div class="caption"> 💗</div>
+      <div class="caption">Çocuksu yanımın zarif incisi💗</div>
     </div>
     <div class="photo-card">
       <img src="images/photo8.jpg" alt="Foto 8">
@@ -126,15 +126,15 @@
     </div>
     <div class="photo-card">
       <img src="images/photo10.jpg" alt="Foto 10">
-      <div class="caption"></div>
+      <div class="caption"> Koca bir ömür seveceğim seni</div>
     </div>
     <div class="photo-card">
       <img src="images/photo11.jpg" alt="Foto 11">
-      <div class="caption"></div>
+      <div class="caption">Hep böyle gülelim</div>
     </div>
     <div class="photo-card">
       <img src="images/photo12.jpg" alt="Foto 12">
-      <div class="caption"></div>
+      <div class="caption">Kalp yerine bal peteği olmalı sende yoksa bir adam nasıl bu kadar tatlı olabilir </div>
     </div>
     <div class="photo-card">
       <img src="images/photo13.jpg" alt="Foto 13">
@@ -155,14 +155,26 @@
   </footer>
 
   <script>
-    const startDate = new Date("2024-11-11T00:00:00");
-    const counter = document.getElementById("counter");
+    <script>
+  const startDate = new Date("2024-11-11T00:00:00");
+  const counter = document.getElementById("counter");
 
-    function updateCounter() {
-      const now = new Date();
-      const diff = now - startDate;
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      counter.textContent = `Birlikte geçen ${days} gündür 💞`;
+  function updateCounter() {
+    const now = new Date();
+    const diff = now - startDate;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    counter.textContent = `Birlikte geçen ${days} gün ${hours} saat ${minutes} dakika ${seconds} saniyedir 💞`;
+  }
+
+  updateCounter();
+  setInterval(updateCounter, 1000);
+</script>
+
     }
 
     updateCounter();
@@ -171,3 +183,4 @@
 
 </body>
 </html>
+
