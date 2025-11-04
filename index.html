@@ -3,129 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diloş & Halilişko’nun Hikayesi 💞</title>
+  <title>Diloş 💖 Halilişko</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #ffe6f0, #fff);
+      background: linear-gradient(to bottom, #ffe6f0, #ffffff);
       color: #444;
       text-align: center;
-      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 20px 10px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #ff6fae;
-      margin-top: 40px;
+      font-size: 2.4rem;
+      color: #ff5c9d;
+      margin-bottom: 10px;
     }
 
     .counter {
       font-size: 1.2rem;
-      margin: 20px 0;
       color: #ff3e8b;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    p.subtitle {
+      color: #ff6fae;
+      font-style: italic;
+      margin-bottom: 30px;
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 30px;
-      max-width: 1000px;
-      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 20px 40px;
     }
 
     .photo-card {
-      background: white;
+      width: 200px;
+      background: #fff;
       border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.3s ease;
     }
 
     .photo-card:hover {
-      transform: scale(1.05);
+      transform: translateY(-6px);
     }
 
     .photo-card img {
       width: 100%;
-      height: 320px;
+      height: 250px;
       object-fit: cover;
     }
 
     .caption {
+      font-size: 0.9rem;
       padding: 10px;
-      font-size: 0.95rem;
       color: #ff3e8b;
       background: #fffafc;
     }
 
-    .hearts {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: 10;
-    }
-
-    .heart {
-      position: absolute;
-      color: #ff6fae;
-      animation: float 6s ease-in infinite;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
-    }
-
-    audio {
-      margin-top: 20px;
+    footer {
+      padding: 20px;
+      background: #ffe6f0;
+      border-top: 2px dashed #ff9ec9;
+      color: #ff3e8b;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <h1>Diloş & Halilişko’nun Hikayesi 💞</h1>
 
-  <div class="gallery">
-    <div class="photo-card"><img src="fotograf/fotograf1.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf2.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf3.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf4.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf5.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf6.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf7.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf8.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf9.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf10.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf11.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf12.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf13.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf14.jpg"><div class="caption">💖</div></div>
-    <div class="photo-card"><img src="fotograf/fotograf15.jpg"><div class="caption">💖</div></div>
-  </div>
+  <header>
+    <h1>Diloş 💖 Halilişko</h1>
+    <div class="counter" id="counter"></div>
+    <p class="subtitle">11 Kasım 2024’ten beri başlayan hikaye 💫</p>
+  </header>
 
-  <audio controls autoplay loop>
-    <source src="https://www.youtube.com/embed/DNGG4l8Kw2A" type="audio/mpeg">
-    Tarayıcınız ses dosyasını desteklemiyor.
-  </audio>
+  <section class="gallery">
+    <div class="photo-card">
+      <img src="images/photo1.jpg" alt="Foto 1">
+      <div class="caption"> Hep böyle gülelim🤭</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo2.jpg" alt="Foto 2">
+      <div class="caption">Diloş: “Bir test yapalım.” Halilişko: “Kalbim hazır değil!” 💘</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo3.jpg" alt="Foto 3">
+      <div class="caption"> YİNE YENİDEN DÜĞÜN 💞</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo4.jpg" alt="Foto 4">
+      <div class="caption">Halilişko’nun ciddiyeti: 0.3 saniye sürdü 😄 💫</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo5.jpg" alt="Foto 5">
+      <div class="caption"> EVLİLİK TEKLİFİ ALDIM HEEE 😄</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo6.jpg" alt="Foto 6">
+      <div class="caption">Seninle konuşmak terapi gibi ama fark ettim… Ücreti hep kalbimden kesiliyor! 💳❤️</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo7.jpg" alt="Foto 7">
+      <div class="caption"> 💗</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo8.jpg" alt="Foto 8">
+      <div class="caption">Bazen seni düşünürken kendi kendime gülümsüyorum…</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo9.jpg" alt="Foto 9">
+      <div class="caption">İki kelime: sen ve huzur 🌸</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo10.jpg" alt="Foto 10">
+      <div class="caption"></div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo11.jpg" alt="Foto 11">
+      <div class="caption"></div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo12.jpg" alt="Foto 12">
+      <div class="caption"></div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo13.jpg" alt="Foto 13">
+      <div class="caption">Birlikte deli, birlikte güzel 💞</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo14.jpg" alt="Foto 14">
+      <div class="caption">“Biz” kelimesi kadar sıcak bir şey yok 💖</div>
+    </div>
+    <div class="photo-card">
+      <img src="images/photo15.jpg" alt="Foto 15">
+      <div class="caption">Ve her fotoğraf, biraz daha “biz” oldu 🌷</div>
+    </div>
+  </section>
 
-  <div class="hearts"></div>
+  <footer>
+    <p>Diloş 💖 Halilişko — 11.11.2024’ten beri gülerek, severek, çoğalarak 💫</p>
+  </footer>
 
   <script>
-    function createHeart() {
-      const heart = document.createElement("div");
-      heart.classList.add("heart");
-      heart.textContent = "💗";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = Math.random() * 3 + 3 + "s";
-      document.querySelector(".hearts").appendChild(heart);
-      setTimeout(() => heart.remove(), 6000);
+    const startDate = new Date("2024-11-11T00:00:00");
+    const counter = document.getElementById("counter");
+
+    function updateCounter() {
+      const now = new Date();
+      const diff = now - startDate;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      counter.textContent = `Birlikte geçen ${days} gündür 💞`;
     }
-    setInterval(createHeart, 400);
+
+    updateCounter();
+    setInterval(updateCounter, 1000 * 60 * 60);
   </script>
+
 </body>
 </html>
